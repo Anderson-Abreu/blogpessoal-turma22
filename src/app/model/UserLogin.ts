@@ -8,5 +8,5 @@ export class UserLogin{
     public foto: string
     public tipo: string
     public token: string
-    public postagem: Postagem
+    public postagem: Postagem[]
 }
