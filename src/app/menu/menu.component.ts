@@ -17,7 +17,7 @@ export class MenuComponent implements OnInit {
   ) { }
 
   ngOnInit(){
-    console.log(this.nome)
+ 
   }
 
   sair(){
