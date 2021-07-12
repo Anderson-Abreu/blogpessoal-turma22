@@ -1,3 +1,4 @@
+import { Tema } from './../../model/Tema';
 import { environment } from './../../../environments/environment.prod';
 import { PostagemService } from './../../service/postagem.service';
 import { Router, ActivatedRoute } from '@angular/router';
@@ -23,6 +24,8 @@ export class PostagemDeleteComponent implements OnInit {
   ngOnInit() {
 
     window.scroll(0,0)
+    
+ 
 
     if(environment.token == ''){
       this.router.navigate(['/entrar'])

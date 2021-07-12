@@ -36,4 +36,4 @@ export class PostagemService {
     return this.http.delete(`https://backendblogpessoal.herokuapp.com/postagens/${id}`, this.token)
   }
 
-}
+} 

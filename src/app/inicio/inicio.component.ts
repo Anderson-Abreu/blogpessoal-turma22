@@ -31,12 +31,14 @@ export class InicioComponent implements OnInit {
     private temaService: TemaService,
     private authService: AuthService
   ) { }
-
+ 
   ngOnInit() {
+    window.scroll(0,0)
 
     if(environment.token == ''){
       this.router.navigate(['/entrar'])
     }
+   
 
     this.getAllTemas()
     this.getAllPostagens()
@@ -80,5 +82,5 @@ export class InicioComponent implements OnInit {
       this.getAllPostagens()
     })
   }
-
+ 
 }
